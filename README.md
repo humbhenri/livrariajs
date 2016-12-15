@@ -141,5 +141,5 @@ which is easier to read; this file is excluded from source control.
 
 Shut it down manually with `Ctrl-C`.
 
-[travis-badge]: https://travis-ci.org/angular/livrariajs.svg?branch=master
-[travis-badge-url]: https://travis-ci.org/angular/livrariajs
+[travis-badge]: https://travis-ci.org/humbhenri/livrariajs.svg?branch=master
+[travis-badge-url]: https://travis-ci.org/humbhenri/livrariajs
