@@ -11,7 +11,6 @@ import { LoginComponent } from './login.component';
       path: 'login',
       component: LoginComponent
     },
-    
   ])],
   declarations: [AppComponent, LoginComponent],
   bootstrap: [AppComponent]
