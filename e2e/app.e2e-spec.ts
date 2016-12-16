@@ -8,8 +8,9 @@ describe('QuickStart E2E Tests', function () {
     browser.get('');
   });
 
-  it('should display: ' + expectedMsg, function () {
-    expect(element(by.css('h1')).getText()).toEqual(expectedMsg);
+  it('no início mostra a página de login: ' + expectedMsg, function () {
+    expect(element(by.css('h1')).getText()).toEqual('Livraria');
+    expect(element(by.css('h1')).getText()).toEqual('Please sign in');
   });
 
 });
