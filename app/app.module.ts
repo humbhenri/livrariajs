@@ -5,19 +5,17 @@ import { RouterModule } from '@angular/router';
 import { LoginComponent } from './login.component';
 import { AuthGuard } from './auth-guard.service';
 import { AuthService } from './auth.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [BrowserModule,
+    FormsModule,
     RouterModule.forRoot([
       {
         path: 'login',
         component: LoginComponent
       },
-      {
-        path: '',
-        canActivate: [AuthGuard],
-        component: AppComponent
-      }
+      
     ])],
   declarations: [AppComponent, LoginComponent],
   bootstrap: [AppComponent],

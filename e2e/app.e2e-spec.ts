@@ -10,7 +10,6 @@ describe('QuickStart E2E Tests', function () {
 
   it('no início mostra a página de login: ' + expectedMsg, function () {
     expect(element(by.css('h1')).getText()).toEqual('Livraria');
-    expect(element(by.css('h1')).getText()).toEqual('Please sign in');
   });
 
 });

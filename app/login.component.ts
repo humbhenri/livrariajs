@@ -7,6 +7,7 @@ import { AuthService } from './auth.service';
 })
 export class LoginComponent {
   message: string;
+  model = {};
   constructor(public authService: AuthService, public router: Router) {
     this.setMessage();
   }
@@ -29,5 +30,9 @@ export class LoginComponent {
   logout() {
     this.authService.logout();
     this.setMessage();
+  }
+
+  onSubmit() {
+    this.login();
   }
 }
