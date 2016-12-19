@@ -6,6 +6,8 @@ import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './login/auth-guard.service';
 import { AuthService } from './login/auth.service';
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './home.component'
+import { TabMenuComponent } from './tab-menu.component'
 
 @NgModule({
   imports: [BrowserModule,
@@ -17,12 +19,12 @@ import { FormsModule } from '@angular/forms';
       },
       {
         path: '',
-        canActivate: [AuthGuard],
-        children: []
+        component: HomeComponent,
+        canActivate: [AuthGuard]
       }
 
     ])],
-  declarations: [AppComponent, LoginComponent],
+  declarations: [AppComponent, LoginComponent, HomeComponent, TabMenuComponent],
   bootstrap: [AppComponent],
   providers: [AuthGuard, AuthService],
 })
