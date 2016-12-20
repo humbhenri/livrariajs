@@ -6,8 +6,8 @@ import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './login/auth-guard.service';
 import { AuthService } from './login/auth.service';
 import { FormsModule } from '@angular/forms';
-import { HomeComponent } from './home.component'
-import { TabMenuComponent } from './tab-menu.component'
+import { HomeComponent } from './home.component';
+import { TabMenuComponent } from './tab-menu.component';
 
 @NgModule({
   imports: [BrowserModule,
